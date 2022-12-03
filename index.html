@@ -12,17 +12,17 @@
 
         <div class="heading">
   
-          <h4 style="font-weight: 800;">Portfolio</h4>
+          <h4 style="font-weight: 800;margin-top: 10px;">Portfolio</h4>
   
         </div>
   
         <ul class="nav-links">
   
-          <li><a class="active" href="index.html">Home</a></li>
-  
-          <li><a href="about.html">About</a></li>
-  
-          <li><a href="services.html">Projects</a></li>
+          <li><a class="active" href="index.html">About</a></li>
+
+          <li><a href="skills.html">Skills</a></li>
+    
+          <li><a href="projects.html">Projects</a></li>
   
           <li><a href="contact.html">Contact</a></li>
   
@@ -34,7 +34,10 @@
         <div id="content">
             <p id="name">NITHISH KUMAR</p>
             <p id="freelance">Freelance App Developer</p>
-        </div>
+            <div style="width: 100%; display:flex; justify-content:center;align-items:center;">
+                <blockquote id="about">I am very passionate in what I do and am always looking forward to work in more innovative areas of technology. My main objective is to gain a position in the field of my expertise, which would enable me to add value, expand my knowledge base, enhance my exposure to new technologies and utilize my strong organization skills with a high level of commitment that will be applied in a progressive environment where creativity, initiative, technical ability & interpersonal relationship skill can contribute to both personal and organizational success as a Mobile Applications Developer</blockquote>
+            </div>
+        </div>            
         <div id="pic">
             <img src="photo.png" style="width: 300px;height: 100%;">
         </div>
@@ -148,10 +151,11 @@ background-color: #484848;
 }
 
 #content {
-    flex: 2;
+    flex: 1.6;
 }
 
 #pic {
+    display: flex;
     float: right;
     position: relative;
     right: 50px;
@@ -160,6 +164,8 @@ background-color: #484848;
     background-color: gray;
     border-radius: 20px;
     box-shadow: 2px 2px 5px 5px white;
+    justify-content: center;
+    align-items: center;
 }
 
 #name {
@@ -169,7 +175,7 @@ background-color: #484848;
     font-size: 40px;
     text-align: center;
     position: relative;
-    top: 100px;
+    top: 70px;
 }
 
 #freelance {
@@ -179,9 +185,66 @@ background-color: #484848;
     font-size: 30px;
     text-align: center;
     position: relative;
-    top: 120px;
+    top: 90px;
 }
 
+blockquote {
+    max-width: 550px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+    position: relative;
+    top: 110px;
+    background: #484848;
+    border-left:5px solid #ccc;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+
+}
+blockquote::before {
+content: open-quote;
+display: block;
+font-size: 80px;
+left: -250px;
+top: -30px;
+position: relative;
+height: 0;
+}
+blockquote::after {
+content: close-quote;
+display: block;
+font-size: 80px;
+left: 170px;
+top: -30px;
+position: relative;
+height: 0;
+}
+/* 
+#about {
+    color: gray;
+    font-size: 20px;
+    position: relative;
+    top: 150px;
+    font-style: italic;
+    width: 60%;
+    text-align: center;
+} */
+
+#quotestart {
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+#quoteend {
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    font-style: italic;
+}
 
 </style>
 </html>
